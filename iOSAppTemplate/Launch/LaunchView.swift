@@ -11,6 +11,8 @@ struct LaunchView: View {
     
     @EnvironmentObject var appState: AppState
     
+    @StateObject var launchViewModel: LauchViewModel = LauchViewModel()
+    
     var body: some View {
         ZStack {
             Color.pink
