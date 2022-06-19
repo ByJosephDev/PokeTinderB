@@ -13,8 +13,7 @@ class LauchViewModel : ObservableObject {
     
     init () {
         
-        appState.currentScreen = .home
-        
+        appState.currentScreen = .main
         
     }
     
