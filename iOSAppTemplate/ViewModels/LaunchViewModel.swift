@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 class LauchViewModel : ObservableObject {
     
@@ -13,7 +14,7 @@ class LauchViewModel : ObservableObject {
     
     init () {
         
-        appState.currentScreen = .main
+        appState.currentScreen = Auth.auth().currentUser != nil ? .main : .signIn
         
     }
     
